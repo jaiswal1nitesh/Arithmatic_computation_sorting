@@ -14,4 +14,9 @@ dict[2]=$y
 dict[3]=$z
 dict[4]=$p
 echo ${dict[@]}
-
+echo ${!dict[@]}
+for ((j=1,i=0; i<${#dict[@]}; i++,j++))
+do
+	arr[$i]=${dict[$j]}
+done
+echo ${arr[@]}
