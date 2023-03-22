@@ -5,5 +5,5 @@ read -p "Enter the First number  ---> " a
 read -p "Enter the Second number ---> " b
 read -p "Enter the third number  ---> " c
 let x=a+b*c
-
+let y=a*b+c
 
