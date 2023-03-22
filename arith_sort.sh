@@ -8,3 +8,10 @@ let x=a+b*c
 let y=a*b+c
 let z=c+a/b
 let p=a%b+c
+declare -A dict
+dict[1]=$x
+dict[2]=$y
+dict[3]=$z
+dict[4]=$p
+echo ${dict[@]}
+
