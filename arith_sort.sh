@@ -34,9 +34,5 @@ do
 	   fi
 	done
 done 
-echo
-#print the array value
-echo "Arithmatic computation in decending order"
-for value in ${arr[@]};do
-echo $value;done;
+echo " DEcending order ${arr[@]} "
 
