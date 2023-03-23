@@ -15,9 +15,28 @@ dict[2]=$uc2
 dict[3]=$uc3
 dict[4]=$uc4
 echo " Computation store in dict ${dict[@]} "
-#echo ${!dict[@]}
+# Data store in the array
 for ((j=1,i=0; i<${#dict[@]}; i++,j++))
 do
 	arr[$i]=${dict[$j]}
 done
 echo " Computation store in array ${arr[@]} "
+# Sorting Array
+for (( i=0; i<4; i++))
+do
+	for(( j=$i+1; j<4; j++))
+	do
+	   if  [ ${arr[$i]} -lt ${arr[$j]} ]
+	   then
+		temp=${arr[$i]}
+		arr[$i]=${arr[$j]}
+		arr[$j]=$temp
+	   fi
+	done
+done 
+echo
+#print the array value
+echo "Arithmatic computation in decending order"
+for value in ${arr[@]};do
+echo $value;done;
+
