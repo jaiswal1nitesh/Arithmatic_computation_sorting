@@ -34,5 +34,30 @@ do
 	   fi
 	done
 done 
+<<<<<<< HEAD
 echo " DEcending order ${arr[@]} "
+echo
+#print the array value
+echo "Arithmatic computation in decending order"
+for value in ${arr[@]};do
+echo $value;done;
+#echo ${arr[0]}  ${arr[3]}
+# Sorting Array Acending order
+for (( i=0; i<4; i++))
+do
+        for(( j=$i+1; j<4; j++))
+        do
+           if  [ ${arr[$i]} -gt ${arr[$j]} ]
+           then
+                temp=${arr[$i]}
+                arr[$i]=${arr[$j]}
+                arr[$j]=$temp
+           fi
+        done
+done
+echo
+#print the array value
+echo "Arithmatic computation in acending order"
+for value in ${arr[@]};do
+echo $value;done;
 
