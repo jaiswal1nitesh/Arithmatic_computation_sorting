@@ -34,7 +34,6 @@ do
 	   fi
 	done
 done 
-<<<<<<< HEAD
 echo " DEcending order ${arr[@]} "
 echo
 #print the array value
